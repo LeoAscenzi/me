@@ -43,7 +43,7 @@ export const personalProjectsData = {
         description: "AI Powered Video Clip Finder",
         image: "/project-resources/capcurate-cover.png",
         imageLink: "/projects/cap-curate",
-        repo: "https://github.com/ColgateLeoAscenzi/cap-curate-backend",
+        repo: "https://github.com/LeoAscenzi/cap-curate-backend",
         tags: [python_tag]
     },
     "raider-rumble-game": {
@@ -51,8 +51,8 @@ export const personalProjectsData = {
         description: "ThreeJS Web Game - Colgate University",
         image: "/project-resources/raider-rumble-cover.png",
         imageLink: "/projects/raider-rumble-game",
-        repo: "https://github.com/ColgateLeoAscenzi/RaiderRumbleGame/",
-        website: "https://colgateleoascenzi.github.io/RaiderRumbleGame/",
+        repo: "https://github.com/LeoAscenzi/RaiderRumbleGame/",
+        website: "https://LeoAscenzi.github.io/RaiderRumbleGame/",
         tags: [javascript_tag]
     }
 };
