@@ -1,0 +1,32 @@
+---
+import ProjectHeader from "../../components/projects/ProjectHeader.astro";
+import { personalProjectsData } from "../../data/projects_pagedata";
+import ConnectedPage from "../../layouts/ConnectedPage.astro";
+
+const projectData = personalProjectsData["order-book-sim"];
+---
+<ConnectedPage>
+    <ProjectHeader title="Order Book Sim" {...projectData}/>
+    <div class="grid col-span-full">
+        <img src="/project-resources/order-book-sim-cover.png" alt="Orderbook Sim image"></img>
+        <br>
+        <div class="grid">
+            <div class="pt-2">
+            Order Book Sim is a fully dockerized, microservice-based simulation of a real-time trading order book. The system consists of a Kafka producer, consumer, and an NGINX reverse proxy, enabling scalable ingestion, processing, and distribution of high-frequency bid/ask data. It is deployed via GitHub Actions to AWS and exposed behind a proxy for reliable external access.
+            <div/>
+            <div class="pt-2">
+            The backend is built with FastAPI using asynchronous Python (asyncio), leveraging AIOKafka for non-blocking message consumption and WebSockets to broadcast low-latency updates to connected clients. The frontend, hosted on Vercel and written in React with TypeScript, is designed to efficiently render streaming data, allowing individual cells to update independently as events are received.
+            </div>
+            <div class="pt-2">
+            Simulations are configurable by specifying the number of generated trades and a delay between messages. For maximum throughput testing, a rate of -1 can be used to send messages as fast as possible. During execution, real-time metrics are displayed to provide insight into system performance and message processing speed.
+            <div/>
+            <div class="pt-2">
+            A future iteration will include a Java-based backend implementation to benchmark and compare performance characteristics against the current Python async architecture under high-throughput workloads.    
+            <div/>
+            <div class="grid col-span-full md:grid-cols-8 grid-cols-4">
+                <a class="disabled md:col-start-3 md:col-span-2 text-center col-start-1 col-span-2" href="https://www.random-data-vis.xyz/">View the Site</a>
+                <a class="md:col-start-5 md:col-span-2 text-center col-start-3 col-span-2" href="https://github.com/LeoAscenzi/order-book-sim">View the Code</a>
+            </div>
+        </div>
+    </div>
+</ConnectedPage>

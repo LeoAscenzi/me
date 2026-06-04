@@ -8,6 +8,7 @@ export const graphql_tag = {tagname: "GraphQL", tagicon: "/icons/graphql.svg", b
 export const java_tag = {tagname: "Java", tagicon: "/icons/java.svg", bgcolor: "#3A75B0"};
 export const springboot_tag = {tagname: "Springboot", tagicon: "/icons/springboot.svg", bgcolor: "#ffffff"};
 export const python_tag = {tagname: "Python", tagicon: "/icons/python.svg", bgcolor: "#4280b1"};
+export const kafka_tag = {tagname: "Kafka", tagicon: "/icons/kafka.svg", bgcolor: "#ffffff"};
 export const postgres_tag = {tagname: "PostgreSQL", tagicon: "/icons/postgresql.svg", bgcolor: "#4269E0"};
 export const docker_tag = {tagname: "Docker", tagicon: "/icons/docker.svg", bgcolor: "#2496ED"};
 export const wordpress_tag = {tagname: "WordPress", tagicon: "/icons/wordpress.svg", bgcolor: "#FFFFFF"};

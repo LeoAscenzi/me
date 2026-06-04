@@ -1,4 +1,4 @@
-import { react_tag, javascript_tag, springboot_tag, typescript_tag, java_tag, python_tag, reactnative_tag, postgres_tag, wordpress_tag } from "./tags.js";
+import { react_tag, javascript_tag, springboot_tag, typescript_tag, java_tag, python_tag, kafka_tag, reactnative_tag, postgres_tag, wordpress_tag } from "./tags.js";
 
 export const workProjectKeys = ["raytheon-project", "contract-ai", "joulebug", "miluma"];
 export const workProjectsData = {
@@ -36,8 +36,16 @@ export const workProjectsData = {
     },
 }
 
-export const personalProjectKeys = ["cap-curate", "raider-rumble-game"];
+export const personalProjectKeys = ["order-book-sim", "cap-curate", "raider-rumble-game"];
 export const personalProjectsData = {
+    "order-book-sim": {
+        title: "Order Book Sim",
+        description: "High throughput event kafka practice",
+        image: "/project-resources/order-book-sim-cover.png",
+        imageLink: "/projects/order-book-sim",
+        repo: "https://github.com/LeoAscenzi/order-book-sim",
+        tags: [python_tag, kafka_tag, typescript_tag]
+    },
     "cap-curate": {
         title: "CapCurate",
         description: "AI Powered Video Clip Finder",

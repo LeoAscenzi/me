@@ -3,7 +3,7 @@ company: 'Carimus'
 job_title: 'Full Stack Software Engineer'
 dates: 'April 2021 - April 2024'
 location: 'Raleigh, NC'
-image: 'https://media.licdn.com/dms/image/C4D0BAQEq5Yw50hWvqA/company-logo_200_200/0/1635360340821/carimus_logo?e=2147483647&v=beta&t=Q5PjPilBwn6aW14IvT3TRH39_REOxVBAXQwx3CCtI-4'
+image: '/project-resources/carimus-icon.png'
 imageLink: 'https://www.carimus.com'
 ---
 **[Raytheon Windchill PLM Project](/projects/raytheon)**
