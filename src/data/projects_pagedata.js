@@ -1,4 +1,4 @@
-import { react_tag, javascript_tag, springboot_tag, typescript_tag, java_tag, python_tag, kafka_tag, reactnative_tag, postgres_tag, wordpress_tag } from "./tags.js";
+import { react_tag, javascript_tag, springboot_tag, typescript_tag, java_tag, python_tag, kafka_tag, reactnative_tag, postgres_tag, wordpress_tag, docker_tag, nextjs_tag, fastapi_tag, expo_tag } from "./tags.js";
 
 export const workProjectKeys = ["raytheon-project", "contract-ai", "joulebug", "miluma"];
 export const workProjectsData = {
@@ -36,8 +36,16 @@ export const workProjectsData = {
     },
 }
 
-export const personalProjectKeys = ["order-book-sim", "cap-curate", "raider-rumble-game"];
+export const personalProjectKeys = ["ivy-bridge-society", "order-book-sim", "cap-curate", "raider-rumble-game"];
 export const personalProjectsData = {
+    "ivy-bridge-society": {
+        title: "Ivy Bridge Society",
+        description: "Full-Stack Ed-Tech Platform",
+        image: "/project-resources/ivy-bridge-cover.png",
+        imageLink: "/projects/ivy-bridge-society",
+        website: "https://www.ivybridgesociety.com",
+        tags: [nextjs_tag, fastapi_tag, postgres_tag, expo_tag, docker_tag]
+    },
     "order-book-sim": {
         title: "Order Book Sim",
         description: "High throughput event kafka practice",

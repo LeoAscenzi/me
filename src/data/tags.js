@@ -12,3 +12,6 @@ export const kafka_tag = {tagname: "Kafka", tagicon: "/icons/kafka.svg", bgcolor
 export const postgres_tag = {tagname: "PostgreSQL", tagicon: "/icons/postgresql.svg", bgcolor: "#4269E0"};
 export const docker_tag = {tagname: "Docker", tagicon: "/icons/docker.svg", bgcolor: "#2496ED"};
 export const wordpress_tag = {tagname: "WordPress", tagicon: "/icons/wordpress.svg", bgcolor: "#FFFFFF"};
+export const nextjs_tag = {tagname: "Next.js", tagicon: "/icons/nextjs.svg", bgcolor: "#000000"};
+export const fastapi_tag = {tagname: "FastAPI", tagicon: "/icons/fastapi.svg", bgcolor: "#009688"};
+export const expo_tag = {tagname: "Expo", tagicon: "/icons/expo.svg", bgcolor: "#1C2024"};

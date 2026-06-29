@@ -1,0 +1,43 @@
+---
+import ProjectHeader from "../../components/projects/ProjectHeader.astro";
+import { personalProjectsData } from "../../data/projects_pagedata";
+import ConnectedPage from "../../layouts/ConnectedPage.astro";
+
+const projectData = personalProjectsData["ivy-bridge-society"];
+---
+<ConnectedPage>
+    <ProjectHeader title="Ivy Bridge Society" {...projectData} />
+    <div class="grid col-span-full">
+        <img src="/project-resources/ivy-bridge-cover.png" alt="Ivy Bridge Society" />
+        <br />
+        <div class="grid">
+            <div class="pt-2">
+            Ivy Bridge Society is a full-stack ed-tech platform built for a college and SAT prep tutoring company.
+            The platform covers the full lifecycle of a tutoring business: student management, class scheduling,
+            attendance tracking, grade recording, payments and invoicing, a community feed, and event management —
+            all accessible to admins, parents, and teachers through role-based views.
+            </div>
+            <div class="pt-2">
+            The ecosystem is split across three applications. The public-facing marketing site and API are built
+            with Next.js 16 (App Router) and FastAPI respectively. The site handles authentication for all users
+            and serves a community feed with posts, comments, and events. A standalone Next.js dashboard app
+            provides the full admin and parent/teacher experience on desktop. Both web apps are deployed on Vercel
+            and share a single backend via a proxied <code>/api</code> route.
+            </div>
+            <div class="pt-2">
+            The backend is a FastAPI service with SQLAlchemy async ORM and PostgreSQL on AWS RDS. Auth uses
+            short-lived JWTs in memory paired with a long-lived refresh token stored in an HttpOnly cookie,
+            rotated on each use and revocable via a database flag. The backend is containerized with Docker
+            and deployed on an AWS EC2 instance behind an nginx reverse proxy with SSL termination via Let's Encrypt
+            and rate limiting on login and API routes. Static file uploads (avatars, attachments) go to AWS S3.
+            </div>
+            <div class="pt-2">
+            The mobile app is built with React Native and Expo (v56), mirroring the dashboard experience for
+            admins, parents, and teachers on iOS and Android. It uses Expo SecureStore for refresh token persistence
+            (replacing the HttpOnly cookie used on web) and supports features like avatar upload via the device
+            camera roll, grade and attendance viewing, payments, event RSVPs, and email notification preferences.
+            </div>
+            <a class="grid pt-2 col-span-full text-center" href="https://www.ivybridgesociety.com">Visit the Site</a>
+        </div>
+    </div>
+</ConnectedPage>
